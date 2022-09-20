@@ -1,3 +1,5 @@
+#Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
 def array123(nums):
     for n in range (0, len(nums)-2):
         if nums[n] == 1 and nums[n+1] == 2 and nums[n+2] == 3:

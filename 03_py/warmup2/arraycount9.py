@@ -1,3 +1,5 @@
+#Given an array of ints, return the number of 9's in the array.
+
 def array_count9(nums):
     count = 0
     for n in range (0, len(nums)):
