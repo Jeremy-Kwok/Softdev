@@ -15,11 +15,11 @@ OPS SUMMARY
 krewes_file = open("krewes.txt", 'r')
 content = krewes_file.read()
 import random as rng
+
 krewes = {2:[], 7:[], 8:[]}
 
 def sort():
     pd_devo_ducky = content.split("@@@")
-    print(pd_devo_ducky)
 
     for n in pd_devo_ducky:
         if n[0] == '2':
@@ -47,6 +47,5 @@ def choose():
     output = devo + " and Ducky " + ducky + " from period " + str(period)
     return output
 
-#print(choose())
 print(sort())
 print(choose())
