@@ -33,8 +33,8 @@ def sort():
 
     return krewes
 
-def obtain_devo_ducky(dontcare):
-    spliter = dontcare.split('$$$')
+def obtain_devo_ducky(devo_info):
+    spliter = devo_info.split('$$$')
     devo_ducky = spliter[1:]
     return devo_ducky
 
