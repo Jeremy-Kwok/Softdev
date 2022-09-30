@@ -12,6 +12,7 @@ QCC
 OPS SUMMARY
 
 '''
+
 krewes_file = open("krewes.txt", 'r')
 content = krewes_file.read()
 import random as rng
