@@ -34,15 +34,15 @@ def sort():
     return krewes
 
 def obtain_devo_ducky(devo_info):
-    spliter = devo_info.split('$$$')
-    devo_ducky = spliter[1:]
+    spliter = devo_info.split('$$$') #Splits devo_info, which includes the period, devo name, and ducky name
+    devo_ducky = spliter[1:] #stores the devo name and ducky name in a list
     return devo_ducky
 
 def choose():
     period = rng.choice([2, 7, 8]) #choose a random period
-    devo_ducky = rng.choice(krewes[period]) #choose a random devo_ducky pair
-    devo = devo_ducky[0] #picks out devo from devo_ducky pair
-    ducky = devo_ducky[1] #picks out ducky from devo_ducky pair
+    devo_ducky_pair = rng.choice(krewes[period]) #choose a random devo_ducky pair
+    devo = devo_ducky_pair[0] #picks out devo from devo_ducky pair
+    ducky = devo_ducky_pair[1] #picks out ducky from devo_ducky pair
 
     output = devo + " and Ducky " + ducky + " from period " + str(period)
     return output
