@@ -17,36 +17,36 @@ content = krewes_file.read()
 import random as rng
 krewes = {2:[], 7:[], 8:[]}
 
-def choose():
-    keys = list(krewes)
-
+def sort():
     pd_devo_ducky = content.split("@@@")
     print(pd_devo_ducky)
 
     for n in pd_devo_ducky:
         if n[0] == '2':
-            spliter = n.split('$$$')
-            devo_ducky = spliter[1:]
-            krewes[2].append(devo_ducky)
+            krewes[2].append(obtain_devo_ducky(n))
         
         if n[0] == '7':
-            spliter = n.split('$$$')
-            devo_ducky = spliter[1:]
-            krewes[7].append(devo_ducky)
+            krewes[7].append(obtain_devo_ducky(n))
+
         if n[0] == '8':
-            spliter = n.split('$$$')
-            devo_ducky = spliter[1:]
-            krewes[8].append(devo_ducky)
+            krewes[8].append(obtain_devo_ducky(n))
 
-    print(krewes)
+    return krewes
 
-'''
-    period = rng.choice([2, 7, 8]) #choose a random key
-    devo = rng.choice(krewes[period]) #choose a random index of the list that corresponds with the chosen key
+def obtain_devo_ducky(dontcare):
+    spliter = dontcare.split('$$$')
+    devo_ducky = spliter[1:]
+    return devo_ducky
 
-    output = devo + " from period " + str(period)
+def choose():
+    period = rng.choice([2, 7, 8]) #choose a random period
+    devo_ducky = rng.choice(krewes[period]) #choose a random devo_ducky pair
+    devo = devo_ducky[0] #picks out devo from devo_ducky pair
+    ducky = devo_ducky[1] #picks out ducky from devo_ducky pair
+
+    output = devo + " and Ducky " + ducky + " from period " + str(period)
     return output
-'''
 
 #print(choose())
-choose()
+print(sort())
+print(choose())
