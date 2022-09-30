@@ -12,20 +12,41 @@ QCC
 OPS SUMMARY
 
 '''
-
+krewes_file = open("krewes.txt", 'r')
+content = krewes_file.read()
 import random as rng
-krewes = {2:["NICHOLAS",  "ANTHONY",  "BRIAN",  "SAMUEL",  "JULIA",  "YUSHA",  "CORINA",  "CRAIG",  "FANG MIN",  "JEFF",  "KONSTANTIN",  "AARON",  "VIVIAN",  "AYMAN",  "TALIA",  "FAIZA",  "ZIYING",  "YUK KWAN",  "DANIEL",  "WEICHEN",  "MAYA",  "ELIZABETH",  "ANDREW",  "VANSH",  "JONATHAN",  "ABID",  "WILLIAM",  "HUI",  "ANSON",  "KEVIN",  "DANIEL",  "IVAN",  "JASMINE",  "JEFFREY"],
-            7:["DIANA",  "DAVID",  "SAM",  "PRATTAY",  "ANNA",  "JING YI",  "ADEN",  "EMERSON",  "RUSSELL",  "JACOB",  "WILLIAM",  "NADA",  "SAMANTHA",  "IAN",  "MARC",  "ANJINI",  "JEREMY",  "LAUREN",  "KEVIN",  "RAVINDRA",  "SADI",  "EMILY",  "GITAE",  "MAY",  "MAHIR",  "VIVIAN",  "GABRIEL",  "BRIANNA",  "JUN HONG",  "JOSEPH",  "MATTHEW",  "JAMES",  "THOMAS",  "NICOLE",  "Karen"],
-            8:["ALEKSANDRA",  "NAKIB",  "AMEER",  "HENRY",  "DONALD",  "YAT LONG",  "SEBASTIAN",  "DAVID",  "YUKI",  "SHAFIUL",  "DANIEL",  "SELENA",  "JOSEPH",  "SHINJI",  "RYAN",  "APRIL",  "ERICA",  "JIAN HONG",  "VERIT",  "JOSHUA",  "WILSON",  "AAHAN",  "GORDON",  "JUSTIN",  "MAYA",  "FAIYAZ",  "SHREYA",  "ERIC",  "JEFFERY",  "BRIAN",  "KEVIN",  "SAMSON",  "BRIAN",  "HARRY",  "wanying"]
-         }
+krewes = {2:[], 7:[], 8:[]}
 
 def choose():
-    #using choice
-    
+    keys = list(krewes)
+
+    pd_devo_ducky = content.split("@@@")
+    print(pd_devo_ducky)
+
+    for n in pd_devo_ducky:
+        if n[0] == '2':
+            spliter = n.split('$$$')
+            devo_ducky = spliter[1:]
+            krewes[2].append(devo_ducky)
+        
+        if n[0] == '7':
+            spliter = n.split('$$$')
+            devo_ducky = spliter[1:]
+            krewes[7].append(devo_ducky)
+        if n[0] == '8':
+            spliter = n.split('$$$')
+            devo_ducky = spliter[1:]
+            krewes[8].append(devo_ducky)
+
+    print(krewes)
+
+'''
     period = rng.choice([2, 7, 8]) #choose a random key
     devo = rng.choice(krewes[period]) #choose a random index of the list that corresponds with the chosen key
-    
+
     output = devo + " from period " + str(period)
     return output
+'''
 
-print(choose())
+#print(choose())
+choose()
