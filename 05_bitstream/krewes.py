@@ -55,5 +55,5 @@ def choose():
     output = devo + " and Ducky " + ducky + " from period " + str(period)
     return output
 
-print(sort())
+sort()
 print(choose())
