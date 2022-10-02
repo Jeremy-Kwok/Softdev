@@ -16,7 +16,13 @@ QCC
 
 OPS SUMMARY
     sort()
-    - Splits krewes.txt using @@@, and then runs each part through obtain_devo_ducky(devo_info)
+    -Splits krewes.txt using @@@, and then runs each part through obtain_devo_ducky(devo_info)
+
+    obtain_devo_ducky(devo_info)
+    -Splits devo_info by $$$, and then omits period and returns devo name and ducky name separated by a comma
+
+    choose()
+    -Randomly chooses a period, and devo-ducky pair
 
 '''
 
