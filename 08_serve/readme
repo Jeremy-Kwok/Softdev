@@ -1,0 +1,146 @@
+v0:
+    Expected Behaviors:
+        -A new page opens up with "No hablo queso!" at the center of the page
+
+    Actual Behaviors:
+        -The first time we run the file, a link to the website is printed into the terminal, with nothing popping up in our browser.
+        
+        * Serving Flask app 'app'
+        * Debug mode: off
+        WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+        * Running on http://127.0.0.1:5000
+        Press CTRL+C to quit
+        
+        "__main__
+        127.0.0.1 - - [Date/Month_Abbreviation/Year Hour:Minute:Second] "GET / HTTP/1.1" 200 -"
+        -A message like this one (with the current date and time) is printed in the terminal EVERY time the website is refreshed/reloaded
+
+        "127.0.0.1 - - [05/Oct/2022 21:04:09] "GET /favicon.ico HTTP/1.1" 404 -"
+        -This line follows the "__main__" lines (ONLY after the website is initially created)
+
+v1:
+    Expected Behaviors:
+        -Does everything v0 does but doesn't print __main__ in the terminal
+
+    Actual Behaviors:
+        -New website does not prompt my google translate to ask if I want spanish-to-english translation on first run
+        -Does not print __main__ to terminal when program is run
+        -Does everything else like v0
+
+v2:
+    Expected Behaviors:
+        -"about to print __name__..." (Brianna thinks it's "__main__") in the terminal
+        -prints "__main__" in the terminal (Brianna thinks below the previous line, Jeremy thinks on the same line)
+        -Does everything the same as v0
+
+    Actual Behaviors:
+        -On initial run, it prints the same message v0 does into the terminal, except nothing after "Press CTRL+C to quit"
+        -On each run:
+
+        about to print __name__...
+        __main__
+        127.0.0.1 - - [Date/Month_Abbreviation/Year Hour:Minute:Second] "GET / HTTP/1.1" 200 -
+
+        is printed into the terminal
+
+        -prompts my google translate on each run
+        -Nothing happens after you make changes to and save the file
+
+v3:
+    Expected Behaviors:
+        -On the initial run: 
+            -Prints the same message as v0 did up, except "Debug mode: on"
+        
+        -After the "Press CTRL+C to quit line":
+            -Prints 
+
+                about to print __name__...
+                __main__
+                127.0.0.1 - - [Date/Month_Abbreviation/Year Hour:Minute:Second] "GET / HTTP/1.1" 200 -
+
+            in the terminal
+
+    Actual Behaviors:
+        -Initial run message printed to the terminal:
+
+            * Serving Flask app 'app'
+            * Debug mode: on
+            WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+            * Running on http://127.0.0.1:5000
+            Press CTRL+C to quit
+            * Restarting with stat
+            * Debugger is active!
+            * Debugger PIN: 103-671-524
+
+        has 3 new lines (the bottom three)
+
+        -After each reload of the website:
+            
+            about to print __name__...
+            __main__
+            127.0.0.1 - - [Date/Month_Abbreviation/Year Hour:Minute:Second] "GET / HTTP/1.1" 200 -
+        
+        is printed into the terminal
+
+        -After any change and save to the file (even if it's a comment):
+
+            * Detected change in '/Users/jeremykwok/Desktop/Softdev/00_flask/v3/app.py', reloading
+            * Restarting with stat
+            * Debugger is active!
+            * Debugger PIN: 103-671-524
+        
+        is printed into the terminals
+
+v4:
+    Expected Behaviors:
+
+        -Initial run message printed to the terminal:
+
+            * Serving Flask app 'app'
+            * Debug mode: on
+            WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+            * Running on http://127.0.0.1:5000
+            Press CTRL+C to quit
+            * Restarting with stat
+            * Debugger is active!
+            * Debugger PIN: 103-671-524
+            
+        -After the "Press CTRL+C to quit line" on each run:
+            -Prints 
+
+                the __name__ of this module is......
+                __main__
+                127.0.0.1 - - [Date/Month_Abbreviation/Year Hour:Minute:Second] "GET / HTTP/1.1" 200 -
+
+            in the terminal
+
+        -After any change and save to the file (even if it's a comment):
+
+            * Detected change in '/Users/jeremykwok/Desktop/Softdev/00_flask/v4/app.py', reloading
+            * Restarting with stat
+            * Debugger is active!
+            * Debugger PIN: 103-671-524
+        
+        is printed into the terminals
+
+    Actual Behaviors:
+
+        -Website looks exactly the same as all the other versions
+        -Prints the expected initial run message
+        -On each run:
+            -Prints 
+
+                the __name__ of this module is......
+                __main__
+                127.0.0.1 - - [Date/Month_Abbreviation/Year Hour:Minute:Second] "GET / HTTP/1.1" 200 -
+
+            in the terminal
+        
+        -After any change and save:
+
+            * Detected change in '/Users/jeremykwok/Desktop/Softdev/00_flask/v4/app.py', reloading
+            * Restarting with stat
+            * Debugger is active!
+            * Debugger PIN: 103-671-524
+        
+        is printed into the terminal
