@@ -4,7 +4,6 @@ SoftDev
 serve
 2022-10-05
 time spent: 0.4 hours on app.py, 1.0 hours on v0-v4
-
 '''
 
 import random as rng
@@ -20,10 +19,10 @@ app = Flask(__name__) # ...
 
 occ = {}
 
-def sort():
-    spliter = content.split("\n")
-    spliter = spliter[1:23] #removes the first and last element of the spliter
+spliter = content.split("\n")
+spliter = spliter[1:23] #removes the first and last element of the spliter
 
+def sort():
     for n in spliter:
         reverse = n[::-1] #reverses the order of characters and numbers
         #print(reverse)
@@ -63,7 +62,11 @@ def picker():
 @app.route("/") # ...
 def hello_world():
     print(__name__) # Print whatever __name__ is in the terminal
-    return "Chosen occupation: " + picker() # ...
+    ret_str = "<h3>CDN: Jeremy Kwok, Brianna Toe, Jun Hong</h3><br><b>Chosen occupation: </b> " + picker() + "<br>List of Occupations:<br>"
+    #create one return string: heading tag for TNPG, boldened text for chosen occupation, print randomly selected occupation, line breaks
+    for occupation in spliter:
+        ret_str += occupation + "<br>" #for each occupation, print on a new line
+    return ret_str
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
