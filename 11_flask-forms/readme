@@ -1,0 +1,25 @@
+CDN: Jeremy Kwok, Brianna Tieu, Jun Hong Wang
+SoftDev
+K11 -- Form(s) Like Voltron
+2022-10-17
+time spent: 
+
+app.py:
+    32 - we can move the methods = ['GET', 'POST'] into the app.route() as another parameter
+    36 - prints __main__
+    38 - request is module, how can we print it?
+    41 - what is args? arguments provided to module?
+    43 - is request.args an array? based on [] usage in print statement
+    45 - prints the type then submitted username
+         for some reason this breaks the entire page, maybe because the username isn't submitted yet?
+         print(request.args['username'])
+    49 - 
+    51 - all are print statements, so should show up in the terminal
+         loads another page?
+    56 - confusing route link, still has old route even if both are changed?
+         Route link changes if both are the same and valid, but if not, uses old working one
+    72 - response to a form submission
+
+login.html:
+    34 - when we submit something, we go to another page, linkage between front and back end, the route needs to match exactly with the route from python
+    35 - the input box
