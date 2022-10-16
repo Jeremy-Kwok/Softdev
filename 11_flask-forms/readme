@@ -2,7 +2,7 @@ CDN: Jeremy Kwok, Brianna Tieu, Jun Hong Wang
 SoftDev
 K11 -- Form(s) Like Voltron
 2022-10-17
-time spent: 
+time spent: 0.5
 
 app.py:
     32 - we can move the methods = ['GET', 'POST'] into the app.route() as another parameter
