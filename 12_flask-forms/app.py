@@ -28,36 +28,28 @@ PROTIP: Insert your own in-line comments
    understand what is going on.
 '''
 
-#we can move the methods = ['GET', 'POST'] into the app.route() as another parameter
-@app.route("/", methods=['GET', 'POST']) 
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
+    '''
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
-    #prints __main__
     print("***DIAG: request obj ***")
-    #request is module, how can we print it?
     print(request)
     print("***DIAG: request.args ***")
-    #what is args? arguments provided to module?
     print(request.args)
-    #is request.args an array? based on [] usage in print statement
-    print("***DIAG: request.args['username']  ***")
-    #prints the type then submitted username
-    #for some reason this breaks the entire page, maybe because the username isn't submitted yet?
+    #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
-    #not sure
     print(request.headers)
-    #all are print statements, so should show up in the terminal
-    #loads another page?
-    return render_template( 'login.html' )
+    '''
+    return render_template('login.html')
 
-@app.route("/foo", methods=['GET', 'POST']) 
-#confusing route link, still has old route even if both are changed?
-#Route link changes if both are the same and valid, but if not, uses old working one
 
+@app.route("/login", methods=['GET', 'POST'])
 def authenticate():
+    
+    '''
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
@@ -69,10 +61,19 @@ def authenticate():
     print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  
-    #response to a form submission
+    '''
 
+    #Use this to force a post request
+    print("***DIAG: request.form ***")
+    print(request.form)
+    #print(request.args['username'] + request.args['sub1'])
+    #return render_template('response.html')
+    #print(request.form)
 
+    if request.method == 'GET':
+        return render_template('response.html', username = request.args['username'], method = request.method)  #For 'get'
+    if request.method == 'POST':
+        return render_template('response.html', username = request.form['username'], method = request.method)  #For 'post'
     
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
