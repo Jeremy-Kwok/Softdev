@@ -66,3 +66,5 @@ To force a post request:
 
 You can put extra arguments into render_template() if you need access to them in the html file
 In the html file, you can access said arguments by using {{"argument name"}}
+
+Post is more secure because in the browser, your history won't have the username you inputted, while 'get' saves it into the history.
