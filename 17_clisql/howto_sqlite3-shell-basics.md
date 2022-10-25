@@ -1,5 +1,13 @@
 https://sqlite.org/cli.html
 
+SQLite Shell:
+    -Commands begin with '.'
+        Ex: .open <FILE> - Close current database and opens <FILE>
+            .exit - Exits program with return code
+            .quit - Exits the program
+            .mode - Changes the mode depending on argument you put in (html, list, csv, column, line, insert)
+            .help - Displays a list of shell commands and what they do
+
 General SQLite Information:
     -Storage classes used:
         null - Null value
