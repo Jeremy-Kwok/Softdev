@@ -1,11 +1,14 @@
-Jelly Jam Pancakes - Jeremy Kwok, Jacob Guo, Prattay Dey
+Team Jelly Jam Pancakes: Jacob Guo, Jeremy Kwok, Prattay Dey
 SoftDev
-K19 -- Sessions Greeting
-2022-11-06
-time spent: 1.0
+K19 -- Sessions Greetings
+Nov 2022
+time spent: 2.0 hr
 
 QCC:
+- How do we print all the values within a session dictionary/object?
 
 DISCO:
 - We need a secret key to use cookies
 - "session" needs to be imported
+- Need to import redirect and url_for from flask library
+- Can import os to make a random session key each time

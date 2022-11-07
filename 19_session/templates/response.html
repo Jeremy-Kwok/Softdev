@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+
+<!--
+Team Jelly Jam Pancakes: Jacob Guo, Jeremy Kwok, Prattay Dey
+SoftDev
+K19 -- Sessions Greetings
+2022-11-06
+time spent: 2.0 hr
+-->
+
 <!--
     Username: Pancake
     Password: Syrup
@@ -17,28 +27,25 @@
         <br>
         K12 -- Take and Give
         <br>
-        2022-10-18
+        2022-11-06
         <br>
-        time spent: 1.0 hours
+        time spent: 2.0 hours
       </h3>
-  
-  
+
+
       <h3>
-        HEY {{username}}, LOOKS LIKE YOU FINALLY LEARNED HOW TO USE {{method}}!!!
+        HEY {{username}}, YOU'RE LOGGED IN!!!
         <br>
       </h3>
       <h3>
         GOOD ONE NUMNUTS
       </h3>
-      
-      <br>
-      <h4>
-        In case you don't know, you use "request.args" for 'get' and "request.form" for 'post'.
-        <br>
-        Make sure your login page and app.py correspond with each other in this feature.
-      </h4>
 
-      <br>
+      <br> <br>
+      <button type="button" name="logout">
+        <a href="{{ url_for('logout')}}">logout</a>
+      </button>
+
   </body>
 
 </html>
