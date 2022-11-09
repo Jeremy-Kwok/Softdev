@@ -14,7 +14,7 @@ from flask import redirect, url_for #to redirect to a different URL
 import os
 
 app = Flask(__name__)    #create Flask object
-app.secret_key = os.urandom(32) #randomized string for key
+app.secret_key = os.urandom(32) #randomized string for SECRET KEY (for interacting with operating system)
 
 
 required_username = "Pancake"
@@ -77,8 +77,6 @@ def logout():
     # remove the username from the session if it's there
     session.pop('username', None)
     return redirect(url_for('index'))
-
-
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
