@@ -43,6 +43,8 @@ Users can:
 
 **Location:** https://developers.google.com/calendar/api
 
+# DISCLAIMER: THIS CARD REQUIRES "pip install" AND OAUTH (do not use right now; too complicated)
+
 ---
 
 Accurate as of (last update):    2022-09-26
