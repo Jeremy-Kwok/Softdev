@@ -16,12 +16,12 @@ def main():
     f = open("key_cat.txt", "r")
     key = f.read()
 
-    x = requests.get('https://api.thecatapi.com/v1/images/search?' + key)
+    x = requests.get('https://api.thecatapi.com/v1/images/search?api_key=' + key)
     print(x)
     print(x.request)
     print(x.json())
     #print(x.content)
-    json = x.json()
+    json = x.json()[0]
     id = json['id']
     image = json['url']
     breeds = json['breeds']
