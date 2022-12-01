@@ -1,0 +1,30 @@
+Spicy Vanilla: Jeremy Kwok and Matthew Yee
+SoftDev
+K24 -- Tasty
+2022-12-1
+time spent: 1 hr
+
+
+DISCO:
+- The grid class makes it easier to resize elements inside a form, but it tends to put everything in the same row whenever it can
+- The columns sizing (i.e. large-6 medium-4 small-2) don't seem to work, but
+- Creating separate grids within the same grid container is a good way to separate the cells into different lines
+- <br> does not seem to work within a grid (it has no effect on the grid cells or on the form or even the headers inside a grid)
+- When you create multiple cells within the same grid, there is a tendency for the cells to all smush up in one row, even if it means that there will be no padding
+- If you restrain the width of your cell (i.e. large-6 medium-4 small-2) then your usually stretchy textarea also gets restrained (only in terms of width though)
+- Cell width constraints still work even if there's no text input involved (i.e. you can use it for radio input to force options that go over the specificed width to move onto the next line)
+- "grid-padding-x" adds padding to both the left and right side OF EACH CELL that's inside of it
+
+QCC:
+- Are buttons only available in preset sizes?
+- What does flexbox do?
+- There's full width, half width, and 1/4 width but is there the same thing for height?
+- Is there a way to set the grid padding (or at least align the grid cells to the left and have them stay there?)
+
+
+Use:
+- Form
+- Cards
+- Button
+- Grid (Half Grid Half Card)
+- Scroll (Gird Height and Card Height same, Grid vertical scroll)
