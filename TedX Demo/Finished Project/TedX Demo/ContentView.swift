@@ -39,6 +39,7 @@ struct ContentView: View {
                         let cell = gameState.board[row][column]
                         
                         Text(cell.displayTile())
+                            //Modifiers
                             .font(.system(size: 60))
                             .foregroundColor(cell.tileColor())
                             .bold()

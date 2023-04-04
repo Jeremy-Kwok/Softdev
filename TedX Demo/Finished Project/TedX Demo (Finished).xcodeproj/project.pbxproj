@@ -36,15 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		426145A229CC95B00067CC5D /* TedX Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TedX Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426145A229CC95B00067CC5D /* TedX Demo (Finished).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TedX Demo (Finished).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		426145A529CC95B00067CC5D /* TedX_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedX_DemoApp.swift; sourceTree = "<group>"; };
 		426145A729CC95B00067CC5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		426145A929CC95B10067CC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426145AB29CC95B10067CC5D /* TedX_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TedX_Demo.entitlements; sourceTree = "<group>"; };
 		426145AD29CC95B10067CC5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		426145B329CC95B10067CC5D /* TedX DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TedX DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426145B329CC95B10067CC5D /* TedX Demo (Finished)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TedX Demo (Finished)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		426145B729CC95B10067CC5D /* TedX_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedX_DemoTests.swift; sourceTree = "<group>"; };
-		426145BD29CC95B10067CC5D /* TedX DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TedX DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		426145BD29CC95B10067CC5D /* TedX Demo (Finished)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TedX Demo (Finished)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		426145C129CC95B10067CC5D /* TedX_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedX_DemoUITests.swift; sourceTree = "<group>"; };
 		426145C329CC95B10067CC5D /* TedX_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedX_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		426145D029CC9A410067CC5D /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		426145A329CC95B00067CC5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				426145A229CC95B00067CC5D /* TedX Demo.app */,
-				426145B329CC95B10067CC5D /* TedX DemoTests.xctest */,
-				426145BD29CC95B10067CC5D /* TedX DemoUITests.xctest */,
+				426145A229CC95B00067CC5D /* TedX Demo (Finished).app */,
+				426145B329CC95B10067CC5D /* TedX Demo (Finished)Tests.xctest */,
+				426145BD29CC95B10067CC5D /* TedX Demo (Finished)UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		426145A129CC95B00067CC5D /* TedX Demo */ = {
+		426145A129CC95B00067CC5D /* TedX Demo (Finished) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 426145C729CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo" */;
+			buildConfigurationList = 426145C729CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo (Finished)" */;
 			buildPhases = (
 				4261459E29CC95B00067CC5D /* Sources */,
 				4261459F29CC95B00067CC5D /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = "TedX Demo";
+			name = "TedX Demo (Finished)";
 			productName = "TedX Demo";
-			productReference = 426145A229CC95B00067CC5D /* TedX Demo.app */;
+			productReference = 426145A229CC95B00067CC5D /* TedX Demo (Finished).app */;
 			productType = "com.apple.product-type.application";
 		};
-		426145B229CC95B10067CC5D /* TedX DemoTests */ = {
+		426145B229CC95B10067CC5D /* TedX Demo (Finished)Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 426145CA29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX DemoTests" */;
+			buildConfigurationList = 426145CA29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo (Finished)Tests" */;
 			buildPhases = (
 				426145AF29CC95B10067CC5D /* Sources */,
 				426145B029CC95B10067CC5D /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				426145B529CC95B10067CC5D /* PBXTargetDependency */,
 			);
-			name = "TedX DemoTests";
+			name = "TedX Demo (Finished)Tests";
 			productName = "TedX DemoTests";
-			productReference = 426145B329CC95B10067CC5D /* TedX DemoTests.xctest */;
+			productReference = 426145B329CC95B10067CC5D /* TedX Demo (Finished)Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		426145BC29CC95B10067CC5D /* TedX DemoUITests */ = {
+		426145BC29CC95B10067CC5D /* TedX Demo (Finished)UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 426145CD29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX DemoUITests" */;
+			buildConfigurationList = 426145CD29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo (Finished)UITests" */;
 			buildPhases = (
 				426145B929CC95B10067CC5D /* Sources */,
 				426145BA29CC95B10067CC5D /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				426145BF29CC95B10067CC5D /* PBXTargetDependency */,
 			);
-			name = "TedX DemoUITests";
+			name = "TedX Demo (Finished)UITests";
 			productName = "TedX DemoUITests";
-			productReference = 426145BD29CC95B10067CC5D /* TedX DemoUITests.xctest */;
+			productReference = 426145BD29CC95B10067CC5D /* TedX Demo (Finished)UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4261459D29CC95B00067CC5D /* Build configuration list for PBXProject "TedX Demo" */;
+			buildConfigurationList = 4261459D29CC95B00067CC5D /* Build configuration list for PBXProject "TedX Demo (Finished)" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +227,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				426145A129CC95B00067CC5D /* TedX Demo */,
-				426145B229CC95B10067CC5D /* TedX DemoTests */,
-				426145BC29CC95B10067CC5D /* TedX DemoUITests */,
+				426145A129CC95B00067CC5D /* TedX Demo (Finished) */,
+				426145B229CC95B10067CC5D /* TedX Demo (Finished)Tests */,
+				426145BC29CC95B10067CC5D /* TedX Demo (Finished)UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		426145B529CC95B10067CC5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 426145A129CC95B00067CC5D /* TedX Demo */;
+			target = 426145A129CC95B00067CC5D /* TedX Demo (Finished) */;
 			targetProxy = 426145B429CC95B10067CC5D /* PBXContainerItemProxy */;
 		};
 		426145BF29CC95B10067CC5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 426145A129CC95B00067CC5D /* TedX Demo */;
+			target = 426145A129CC95B00067CC5D /* TedX Demo (Finished) */;
 			targetProxy = 426145BE29CC95B10067CC5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -509,7 +509,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TedX Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TedX Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TedX Demo (Finished).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TedX Demo (Finished)";
 			};
 			name = Debug;
 		};
@@ -532,7 +532,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TedX Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TedX Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TedX Demo (Finished).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TedX Demo (Finished)";
 			};
 			name = Release;
 		};
@@ -583,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4261459D29CC95B00067CC5D /* Build configuration list for PBXProject "TedX Demo" */ = {
+		4261459D29CC95B00067CC5D /* Build configuration list for PBXProject "TedX Demo (Finished)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				426145C529CC95B10067CC5D /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		426145C729CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo" */ = {
+		426145C729CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo (Finished)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				426145C829CC95B10067CC5D /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		426145CA29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX DemoTests" */ = {
+		426145CA29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo (Finished)Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				426145CB29CC95B10067CC5D /* Debug */,
@@ -610,7 +610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		426145CD29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX DemoUITests" */ = {
+		426145CD29CC95B10067CC5D /* Build configuration list for PBXNativeTarget "TedX Demo (Finished)UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				426145CE29CC95B10067CC5D /* Debug */,

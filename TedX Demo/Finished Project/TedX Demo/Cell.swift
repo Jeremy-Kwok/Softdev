@@ -9,8 +9,10 @@ import Foundation
 import SwiftUI
 
 struct Cell {
+    //Variables
     var tile: Tile
     
+    //Methods
     func displayTile() -> String {
         switch(tile) {
             case Tile.Circle:
@@ -21,6 +23,7 @@ struct Cell {
                 return ""
         }
     }
+    
     
     func tileColor() -> Color {
         switch(tile) {
@@ -34,6 +37,7 @@ struct Cell {
     }
 }
 
+//Enumerations define a common type for a group of related values
 enum Tile {
     case Circle
     case Cross

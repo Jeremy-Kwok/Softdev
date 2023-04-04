@@ -16,8 +16,6 @@ class GameState: ObservableObject{
     @Published var showAlert : Bool //= false
     @Published var alertMessage : String //= "Draw"
     
-    
-    
     init(){
         //board = [[Cell]]()
         //turn = Tile.Cross
@@ -33,6 +31,7 @@ class GameState: ObservableObject{
     }
     
     func placeTile(_ row: Int,_ column: Int){
+        
         if(board[row][column].tile != Tile.Empty){
             return //do nothing
         }
