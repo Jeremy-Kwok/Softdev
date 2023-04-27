@@ -1,0 +1,10 @@
+table creates a table
+tr creates a new row
+td creates cells in row
+
+alerts take precedence by container size (smallest comes first then outermost last)
+
+if .addEventListener has true, then it prioritizes the container its applied to but follows regular precedence from there
+if multiple are true, then it prioritizes based on outermost container to innermost
+
+stopPropagation stops the chain of alerts
