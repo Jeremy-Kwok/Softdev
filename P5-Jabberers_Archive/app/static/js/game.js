@@ -2,8 +2,8 @@ const viewWidth = 500;
 const viewHeight = 500;
 const mapWidth = 3000;
 let mapHeight = 3000;
-const scaleRatioX = 0.1; //viewWidth / mapWidth;
-const scaleRatioY = 0.1; //viewHeight / mapHeight;
+const scaleRatioX = 0.5; //viewWidth / mapWidth;
+const scaleRatioY = 0.5; //viewHeight / mapHeight;
 var currentLevel = 1; //note current level
 
 let islandsGroup; //group of islands
@@ -50,30 +50,6 @@ function preload() {
 }
 
 function create() {
-
-    //Create Level Label Group
-    levelLabelGroup = this.add.group();
-
-    levelText = this.add.text(10, 10, "Level", {
-        fontSize: "24px",
-        fill: "#FFFFFF",
-        stroke: "#000000",
-        strokeThickness: 3
-    });
-    levelText.setOrigin(0, 0);
-
-    var levelNumber = this.add.text(10, 40, currentLevel, {
-        fontSize: "24px",
-        fill: "#FFA500",
-        stroke: "#FF0000",
-        strokeThickness: 2
-    })
-    levelNumber.setOrigin(0, 0);
-
-    levelLabelGroup.add(levelText); //add levelText to group
-    levelLabelGroup.add(levelNumber); //add levelNumber to group
-    //levelLabelGroup.setScrollFactor(0); //Make unscrollable
-
 
     //Create lava floor
     lava = this.add.sprite(mapWidth/2, mapHeight, "lava"); //this.sys.game.config.height-200, "lava");
@@ -132,13 +108,31 @@ function create() {
     //Make camera focus kirby
     this.cameras.main.startFollow(kirby);
 
+    //setScrollFactor is used to make the label position absolute
+    //setOrigin to create label from top left of container
+    levelText = this.add.text(675, -250, "Level", {
+        fontSize: "48px",
+        fill: "#FFFFFF",
+        stroke: "#A117F2",
+        strokeThickness: 3
+    }).setScrollFactor(0);
+    levelText.setOrigin(0.5, 0);
+
+    var levelNumber = this.add.text(675, -200, currentLevel, {
+        fontSize: "48px",
+        fill: "#FFA500",
+        stroke: "#FF0000",
+        strokeThickness: 4
+    }).setScrollFactor(0);
+    levelNumber.setOrigin(0.5, 0);
+
 }
 
 function update() {
 
     //Keep score label in same place
-    levelLabelGroup.x = this.cameras.main.scrollX;
-    levelLabelGroup.y = this.cameras.main.scrollY;
+    //console.log(levelLabelGroup.x + " " + levelLabelGroup.y);
+    //levelLabelGroup.setScrollFactor(0,0);
 
     //Kirby Freeze
     kirby.setVelocityX(0);
@@ -156,8 +150,10 @@ function update() {
         }
     } 
 
-    //Adjust camera according to kirby's height
+
+    //Adjust camera and Level Label according to kirby's height
     this.cameras.main.scrollY = kirby.y - this.cameras.main.height/2;
+
 
     //Check if the Kirby reaches the goal
     if (Phaser.Geom.Intersects.RectangleToRectangle(kirby.getBounds(), goal.getBounds())){
