@@ -28,7 +28,7 @@ var config = {
         default: 'arcade',
         arcade: { 
             gravity: { y: 1000 }, // Set the gravity value
-            debug: true // Set to true to show physics bodies
+            debug: false // Set to true to show physics bodies
         }
     },
     scene: {
